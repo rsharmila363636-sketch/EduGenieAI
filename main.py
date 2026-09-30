@@ -18,8 +18,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 def home(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
-
+     return templates.TemplateResponse("index.html", {"request": request})
+    
 
 @app.post("/qa")
 def qa(data: InputText):
